@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'TrebuchetMS', sans-serif;
+    font-family: 'Trebuchet', sans-serif;
 		font-weight: 400;
 		font-size: 16px;
   }

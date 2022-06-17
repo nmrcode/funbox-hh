@@ -8,8 +8,7 @@ import * as S from "./App.styled"
 
 const App: FC = () => {
 	return (
-		<S.Wrapper>
-			<S.Background src={bg} draggable={false} />
+		<S.Wrapper style={{ backgroundImage: `url('${bg}')` }}>
 			<Heading text="Ты сегодня покормил кота?" tag="h1" />
 			<Cards />
 		</S.Wrapper>

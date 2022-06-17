@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d7ef4a3-75a4-47d6-b508-1dba1eff86e6" name="Changes" comment="подготовлены все файлы и цвета">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Exo2.0-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/TrebuchetMS-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/TrebuchetMS.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/cards/Cards.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/heading/Heading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/declarations/fonts.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/declarations/image.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/IHeadingProps.ts" afterDir="false" />
+    <list default="true" id="3d7ef4a3-75a4-47d6-b508-1dba1eff86e6" name="Changes" comment="сделан простой компонент для главного заголовка">
+      <change afterPath="$PROJECT_DIR$/src/components/cards/Cards.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cards/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/ICard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/checkStringToNumber.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styled-components/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/fonts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cards/Cards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/Cards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/declarations/image.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/declarations/image.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled-components/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled-components/global.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655472913346</updated>
-      <workItem from="1655472916146" duration="7028000" />
+      <workItem from="1655472916146" duration="16033000" />
     </task>
     <task id="LOCAL-00001" summary="первоначальная настройка проекта (tsconfig, prettierrc)">
       <created>1655474443534</created>
@@ -88,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655477106011</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="сделан простой компонент для главного заголовка">
+      <created>1655480155451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655480155451</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +115,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="первоначальная настройка проекта (tsconfig, prettierrc)" />
     <MESSAGE value="подготовлены все файлы и цвета" />
-    <option name="LAST_COMMIT_MESSAGE" value="подготовлены все файлы и цвета" />
+    <MESSAGE value="сделан простой компонент для главного заголовка" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделан простой компонент для главного заголовка" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

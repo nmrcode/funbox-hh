@@ -1,7 +1,14 @@
 import { FC } from "react"
 
+import * as S from "./Cards.styled"
+import CardsList from "./CardsList/CardsList"
+
 const Cards: FC = () => {
-	return <div>Cards</div>
+	return (
+		<S.CardsSection>
+			<CardsList />
+		</S.CardsSection>
+	)
 }
 
 export default Cards
