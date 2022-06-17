@@ -6,11 +6,16 @@
   "singleQuote": false,
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
-    "^@/components/(.*)$",
-    "^@/hooks/(.*)$",
-    "^@/types/(.*)$",
+    "^../components/(.*)$",
+    "^./components/(.*)$",
+    "^../hooks/(.*)$",
+    "^./hooks/(.*)$",
+    "^../types/(.*)$",
+    "^./types/(.*)$",
+    "^../assets/(.*)$",
+    "^./assets/(.*)$",
     "^../(.*)",
-    "(.scss)"
+    "^./(.*)"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
