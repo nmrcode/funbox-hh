@@ -40,6 +40,18 @@ export const Card = styled.article<ICardProps>`
 		);
 	}
 
+	pointer-events: ${(props) => (props.disabled ? "none" : "all")};
+	user-select: ${(props) => (props.disabled ? "none" : "all")};
+	filter: ${(props) => (props.disabled ? "grayscale()" : "none")};
+
+	${(props) =>
+		props.disabled &&
+		css`
+			${Weight} {
+				background-color: #b3b3b3;
+			}
+		`}
+
 	${(props) =>
 		props.selected &&
 		css`
@@ -131,6 +143,16 @@ export const BottomLink = styled.div`
 		outline: none;
 		font: inherit;
 		color: ${(props) => props.theme.accentPrimary};
-		border-bottom: 1px dashed;
+		text-decoration: underline;
+		text-decoration-style: dashed;
+	}
+
+	span {
+		font-family: "Trebuchet", sans-serif;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 15px;
+		text-align: center;
+		color: #ffff66;
 	}
 `

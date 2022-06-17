@@ -3,7 +3,12 @@ export interface ICard {
 	subName: string
 	name: string
 	ingredient: string
-	options: string[]
+	options: {
+		count: number
+		miceCount: number
+		isSatisfied: boolean
+	}
 	imageUrl: string
 	weight: string
+	description: string
 }

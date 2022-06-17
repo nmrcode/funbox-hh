@@ -7,8 +7,13 @@ export const cardsData: ICard[] = [
 		name: "Нямушка",
 		ingredient: "фуа-гра",
 		imageUrl: `${cat}`,
-		options: ["10 порций", "Мышь в подарок"],
+		options: {
+			isSatisfied: false,
+			miceCount: 1,
+			count: 0,
+		},
 		weight: "5",
+		description: "Печень утки разварная с артишоками.",
 	},
 
 	{
@@ -16,8 +21,13 @@ export const cardsData: ICard[] = [
 		name: "Нямушка",
 		ingredient: "рыбой",
 		imageUrl: `${cat}`,
-		options: ["40 порций", "2 мыши в подарок"],
+		options: {
+			isSatisfied: false,
+			miceCount: 2,
+			count: 40,
+		},
 		weight: "2",
+		description: "Головы щучьи с чесноком да свежайшая сёмгушка.",
 	},
 
 	{
@@ -25,7 +35,12 @@ export const cardsData: ICard[] = [
 		name: "Нямушка",
 		ingredient: "курой",
 		imageUrl: `${cat}`,
-		options: ["100 порций", "5 мышей в подарок", "Заказчик доволен"],
+		options: {
+			isSatisfied: true,
+			miceCount: 5,
+			count: 100,
+		},
 		weight: "0,5",
+		description: "Филе из цыплят с трюфелями в бульоне.",
 	},
 ]

@@ -13,10 +13,11 @@ const CardsList: FC = () => {
 					key={card.id}
 					name={card.name}
 					imageUrl={card.imageUrl}
-					options={card.options}
 					subName={card.subName}
 					weight={card.weight}
 					ingredient={card.ingredient}
+					description={card.description}
+					options={card.options}
 				/>
 			))}
 		</S.Wrapper>
