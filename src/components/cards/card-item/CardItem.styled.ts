@@ -145,7 +145,6 @@ export const BottomLink = styled.div`
 	line-height: 15px;
 	text-align: center;
 	color: ${(props) => props.theme.lightFont};
-	max-width: 300px;
 
 	button {
 		cursor: pointer;
@@ -165,5 +164,9 @@ export const BottomLink = styled.div`
 		line-height: 15px;
 		text-align: center;
 		color: #ffff66;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 11px;
 	}
 `

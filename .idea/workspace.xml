@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d7ef4a3-75a4-47d6-b508-1dba1eff86e6" name="Changes" comment="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useHover.ts" afterDir="false" />
+    <list default="true" id="3d7ef4a3-75a4-47d6-b508-1dba1eff86e6" name="Changes" comment="готовое задание">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/ICardProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ICardProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/checkStringToNumber.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655472913346</updated>
-      <workItem from="1655472916146" duration="25350000" />
+      <workItem from="1655472916146" duration="25766000" />
     </task>
     <task id="LOCAL-00001" summary="первоначальная настройка проекта (tsconfig, prettierrc)">
       <created>1655474443534</created>
@@ -109,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655495201878</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="готовое задание">
+      <created>1655498593077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655498593077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +135,9 @@
     <MESSAGE value="закончена верстка карточек" />
     <MESSAGE value="сделал тогглер карточки" />
     <MESSAGE value="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов" />
+    <MESSAGE value="готовое задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="готовое задание" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
