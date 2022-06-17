@@ -1,5 +1,6 @@
 import { FC } from "react"
 
+import { useToggle } from "../../../hooks/useToggle"
 import { ICard } from "../../../types/ICard"
 import { checkStringToNumber } from "../../../utils/checkStringToNumber"
 
@@ -13,10 +14,12 @@ const CardItem: FC<ICard> = ({
 	imageUrl,
 	ingredient,
 }) => {
+	const [isCardSelected, setIsCardSelected] = useToggle()
+
 	return (
 		<>
 			<S.Wrapper>
-				<S.Card>
+				<S.Card onClick={setIsCardSelected} selected={isCardSelected}>
 					<S.TextBox>
 						<S.Subname>{subName}</S.Subname>
 						<S.Name>{name}</S.Name>
@@ -42,7 +45,8 @@ const CardItem: FC<ICard> = ({
 					<S.Image src={imageUrl} />
 				</S.Card>{" "}
 				<S.BottomLink>
-					Чего сидишь? Порадуй котэ, <button>купи.</button>
+					Чего сидишь? Порадуй котэ,{" "}
+					<button onClick={setIsCardSelected}>купи.</button>
 				</S.BottomLink>
 			</S.Wrapper>
 		</>

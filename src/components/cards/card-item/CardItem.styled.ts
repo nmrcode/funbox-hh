@@ -1,25 +1,28 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+
+import { ICardProps } from "../../../types/ICardProps"
 
 export const Wrapper = styled.div``
 
-export const Card = styled.article`
+export const Card = styled.article<ICardProps>`
 	cursor: pointer;
 	font-family: "Trebuchet", sans-serif;
 	font-weight: 700;
-
 	position: relative;
 	z-index: 2;
-
-	//background-color: #f2f2f2;
-	//border: 4px solid #1698d9;
 	border-radius: 12px;
-
-	background-image: linear-gradient(135deg, transparent 5%, #1698d9 5% 95%);
-
+	background-image: linear-gradient(
+		135deg,
+		transparent 5%,
+		${(props) =>
+				props.selected
+					? props.theme.accentSecondary
+					: props.theme.accentPrimary}
+			5% 95%
+	);
 	overflow: hidden;
 	min-height: 480px;
 	margin-bottom: 14px;
-
 	&::before {
 		z-index: -1;
 		content: "";
@@ -36,6 +39,14 @@ export const Card = styled.article`
 			#f2f2f2 95%
 		);
 	}
+
+	${(props) =>
+		props.selected &&
+		css`
+			${Weight} {
+				background-color: ${(props) => props.theme.accentSecondary};
+			}
+		`}
 `
 export const TextBox = styled.div`
 	padding: 21px 61px 21px 48px;
@@ -70,6 +81,7 @@ export const OptionsList = styled.div`
 		margin-bottom: 3px;
 	}
 `
+
 export const Weight = styled.div`
 	position: absolute;
 	bottom: 12px;
@@ -82,6 +94,7 @@ export const Weight = styled.div`
 	border-radius: 50%;
 	width: 80px;
 	height: 80px;
+
 	background-color: ${(props) => props.theme.accentPrimary};
 
 	div {
@@ -97,13 +110,14 @@ export const Weight = styled.div`
 		}
 	}
 `
+
 export const Image = styled.img`
 	position: absolute;
 	bottom: -90px;
 	left: -30px;
 `
 export const BottomLink = styled.div`
-	font-family: "Trebuchet";
+	font-family: "Trebuchet", sans-serif;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 15px;
@@ -115,7 +129,6 @@ export const BottomLink = styled.div`
 		background-color: transparent;
 		border: none;
 		outline: none;
-		color: inherit;
 		font: inherit;
 		color: ${(props) => props.theme.accentPrimary};
 		border-bottom: 1px dashed;
