@@ -1,8 +1,8 @@
 import { FC } from "react"
 
+import { useHover } from "../../../hooks/useHover"
 import { useToggle } from "../../../hooks/useToggle"
 import { ICard } from "../../../types/ICard"
-import { checkStringToNumber } from "../../../utils/checkStringToNumber"
 
 import * as S from "./CardItem.styled"
 
@@ -16,17 +16,27 @@ const CardItem: FC<ICard> = ({
 	description,
 }) => {
 	const [isCardSelected, setIsCardSelected] = useToggle()
+	const [cardRef, isCardHovered] = useHover()
 
 	return (
 		<>
 			<S.Wrapper>
 				<S.Card
+					ref={cardRef}
 					onClick={setIsCardSelected}
 					selected={isCardSelected}
 					disabled={!options.count}
 				>
 					<S.TextBox>
-						<S.Subname>{subName}</S.Subname>
+						<S.Subname>
+							<span>
+								{isCardHovered && isCardSelected ? (
+									<span className="delete">Котэ не одобряет?</span>
+								) : (
+									<span>{subName}</span>
+								)}
+							</span>
+						</S.Subname>
 						<S.Name>{name}</S.Name>
 						<S.Ingridient>с {ingredient}</S.Ingridient>
 						<S.OptionsList>

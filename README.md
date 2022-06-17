@@ -6,7 +6,7 @@
 ## 🛠 Что было использовано
 * React
 * Typescript
-* SCSS
+* Styled-components
 
 ## Запуск
 

@@ -11,6 +11,7 @@ export const Card = styled.article<ICardProps>`
 	position: relative;
 	z-index: 2;
 	border-radius: 12px;
+	min-width: 300px;
 	background-image: linear-gradient(
 		135deg,
 		transparent 5%,
@@ -41,7 +42,7 @@ export const Card = styled.article<ICardProps>`
 	}
 
 	pointer-events: ${(props) => (props.disabled ? "none" : "all")};
-	user-select: ${(props) => (props.disabled ? "none" : "all")};
+	user-select: none;
 	filter: ${(props) => (props.disabled ? "grayscale()" : "none")};
 
 	${(props) =>
@@ -62,12 +63,21 @@ export const Card = styled.article<ICardProps>`
 `
 export const TextBox = styled.div`
 	padding: 21px 61px 21px 48px;
+	@media (max-width: 768px) {
+		padding: 21px 41px 21px 38px;
+	}
 `
 export const Subname = styled.div`
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 19px;
-	color: ${(props) => props.theme.grayFont};
+	span {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: ${(props) => props.theme.grayFont};
+	}
+
+	.delete {
+		color: ${(props) => props.theme.accentSecondary};
+	}
 `
 export const Name = styled.h3`
 	font-size: 48px;
@@ -135,6 +145,7 @@ export const BottomLink = styled.div`
 	line-height: 15px;
 	text-align: center;
 	color: ${(props) => props.theme.lightFont};
+	max-width: 300px;
 
 	button {
 		cursor: pointer;

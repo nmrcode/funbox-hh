@@ -1,7 +1,13 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.div`
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	gap: 80px;
+
+	@media (max-width: 768px) {
+		gap: 30px;
+	}
 `

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d7ef4a3-75a4-47d6-b508-1dba1eff86e6" name="Changes" comment="сделал тогглер карточки">
+    <list default="true" id="3d7ef4a3-75a4-47d6-b508-1dba1eff86e6" name="Changes" comment="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов">
+      <change afterPath="$PROJECT_DIR$/src/hooks/useHover.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/CardsList/CardsList.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/card-item/CardItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/ICard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ICard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/ICardProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ICardProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/checkStringToNumber.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655472913346</updated>
-      <workItem from="1655472916146" duration="21713000" />
+      <workItem from="1655472916146" duration="25350000" />
     </task>
     <task id="LOCAL-00001" summary="первоначальная настройка проекта (tsconfig, prettierrc)">
       <created>1655474443534</created>
@@ -101,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655492016821</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов">
+      <created>1655495201878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655495201878</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +133,8 @@
     <MESSAGE value="сделан простой компонент для главного заголовка" />
     <MESSAGE value="закончена верстка карточек" />
     <MESSAGE value="сделал тогглер карточки" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделал тогглер карточки" />
+    <MESSAGE value="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены стили для товара, который закончился, изменена структура в data.ts, тернарники для текстов" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
